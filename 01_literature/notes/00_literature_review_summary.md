@@ -8,7 +8,7 @@
 | 主題 | 重點文獻 | 對本研究的意義 |
 |---|---|---|
 | A. 風險預測方程（KFRE） | Tangri 2011 (JAMA); Tangri 2016 (JAMA, 多國驗證) | 建立 baseline 可比較的臨床標準；4/8 變項組合是特徵選擇的依據 |
-| B. 機器學習預測 | Cureus 2024 系統性回顧; Song 2020 meta-analysis; Sci Rep 2022 | ML AUROC 約 0.84–0.89，與 KFRE 相當或略優；支持本研究比較 LR vs ML |
+| B. 機器學習預測 | Cureus 2024 系統性回顧; Lei 2022 meta-analysis; Sci Rep 2022 | ML AUROC 約 0.84–0.89，與 KFRE 相當或略優；支持本研究比較 LR vs ML |
 | C. 關鍵預測因子（蛋白尿/eGFR/白蛋白） | Iseki 2013 (Nat Rev Nephrol); eGFR+UACR 合用 | 佐證假說：低 eGFR、高 UPCR、低白蛋白 → 風險↑ |
 | D. 治療的保護作用（SGLT2i/RAASi） | Heerspink 2020 (DAPA-CKD); EMPA-KIDNEY 2023 | 佐證假說：SGLT2i/RAASi 具腎臟保護；亦影響變項解讀與臨床定位 |
 
@@ -20,8 +20,8 @@
 - **本研究連結**：我們的資料含 KFRE 8 變項中的多數（eGFR、albumin、phosphate、calcium、bicarbonate），UPCR 可近似 UACR。可將「KFRE 類」變項組合作為 baseline 特徵集。
 
 ### B. 機器學習預測 CKD 進展
-- **系統性回顧（Cureus 2024）**：涵蓋 LR、SVM、隨機森林、神經網路等，ESRD 預測 AUROC 約 0.84–0.89；all-cause mortality 較低（約 0.75–0.77）。
-- **Meta-analysis（Song 2020）**：LR、naïve Bayes、隨機森林三者預測力相當，且相較 KFRE 有更高的敏感度。
+- **系統性回顧（Cureus 2024）**：涵蓋 LR、SVM、隨機森林、神經網路等，ESRD 預測 AUROC 約 0.84–0.89；預測全死因死亡率（all-cause mortality）的 AUROC 較低（約 0.75–0.77）。
+- **Meta-analysis（Lei 2022）**：LR、naïve Bayes、隨機森林三者預測力相當，且相較 KFRE 有更高的敏感度。
 - **本研究連結**：支持以 logistic regression 為 baseline，再比較正則化/樹模型；並提醒重視 discrimination 與 calibration，而非僅 accuracy。
 
 ### C. 關鍵預測因子
