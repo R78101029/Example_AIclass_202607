@@ -1,0 +1,16 @@
+# 核心資料分析
+pandas
+numpy
+scipy
+
+# 視覺化
+matplotlib
+seaborn
+
+# 統計與建模
+scikit-learn
+statsmodels
+imbalanced-learn
+
+# Notebook
+jupyter

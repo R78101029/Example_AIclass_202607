@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# 作業系統
+.DS_Store
+Thumbs.db
+
+# 大型 / 衍生資料（原始合成資料保留於版控；衍生檔不進版控）
+03_data/interim/*
+03_data/processed/*
+03_data/external/*
+!03_data/**/.gitkeep
+!03_data/**/README.md
+
+# 模型與輸出
+*.pkl
+*.joblib
+*.h5
+
+# 分析輸出（大檔）
+05_analysis/figures/*.png
+05_analysis/figures/*.pdf
+!05_analysis/**/.gitkeep
+
+# 編輯器
+.vscode/
+.idea/
+
+# 環境變數
+.env
